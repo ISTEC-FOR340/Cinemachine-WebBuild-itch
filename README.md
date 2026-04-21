@@ -1,39 +1,65 @@
-# Cinemachine-WebBuild-itch 🎮
+# 🎮 Cinemachine Technical Showcase
 
-A technical showcase of Unity Cinemachine implementations, featuring advanced camera behaviors and framing techniques.
+A professional Unity repository demonstrating advanced **Cinemachine** implementations. This project serves as both a live portfolio and a functional starter template for students to clone, study, and extend.
 
-## 🚀 Live Demo
-You can view the interactive web portfolio and play the builds here:
-**👉 [istec-for340.github.io/Cinemachine-WebBuild-itch/](https://istec-for340.github.io/Cinemachine-WebBuild-itch/)**
+---
+
+## 🚀 Quick Links
+* **🌐 [Live Web Portfolio](https://istec-for340.github.io/Cinemachine-WebBuild-itch/)** - Interactive showcase of all exercises.
+* **🕹️ [Itch.io Collection](https://istec-for340.itch.io/)** - Play individual builds in the browser.
+
+---
+
+## 📖 Student Guide: Getting Started
+
+This repository contains the **full Unity project source**. Students are encouraged to clone this repo to inspect the Virtual Camera configurations.
+
+### ⚙️ Installation
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/ISTEC-FOR340/Cinemachine-WebBuild-itch.git](https://github.com/ISTEC-FOR340/Cinemachine-WebBuild-itch.git)
+    ```
+2.  **Open in Unity:** * Open Unity Hub.
+    * Click **Add** -> **Add project from disk**.
+    * Select the `UnityProject` folder inside this repository.
+    * *Recommended Version: Unity 2022.3 LTS or higher.*
 
 ---
 
 ## 📸 Technical Showcase
 ![Cinemachine Showcase](./Cinemachine_ex.jpg)
-*Reference: Implementation of Cinemachine cameras for Exercise 1 and 2.*
+*Visualizing camera paths and framing constraints within the Unity Editor.*
 
 ---
 
-## 🛠 Featured Exercises
+## 🛠 Project Modules
 
-The project is divided into technical modules focusing on different Cinemachine components:
+The project is structured into specific technical exercises:
 
-### 1. LinearCam Example (Exercício 1)
-* **Focus:** Smooth pathing and linear transitions.
-* **Implementation:** Utilizes Cinemachine Dolly Carts and Smooth Path components.
-* **Play on Itch.io:** [LinearCam Example](https://istec-for340.itch.io/linearcam-example)
+### 1. LinearCam (Exercício 1)
+* **Core Concepts:** Tracked dollies, waypoint interpolation, and path physics.
+* **Key Components:** `CinemachineDollyCart`, `CinemachineSmoothPath`.
+* **Play:** [Itch.io Link](https://istec-for340.itch.io/linearcam-example)
 
 ### 2. Enquadramentos (Exercício 2)
-* **Focus:** Framing and Composition.
-* **Implementation:** Demonstrates Clear Shot cameras and Composer settings to maintain perfect visual framing.
-* **Play on Itch.io:** [Enquadramentos](https://istec-for340.itch.io/enquadramentos)
+* **Core Concepts:** Dynamic framing, screen-space composition, and occlusion handling.
+* **Key Components:** `CinemachineClearShot`, `Composer` (Dead Zones/Soft Zones).
+* **Play:** [Itch.io Link](https://istec-for340.itch.io/enquadramentos)
 
 ---
 
-## 📂 Project Structure
+## 📂 Repository Structure
 
-```text
-├── UnityProject/          # Complete Unity source files and assets
-├── index.html             # Web portfolio (Live Demo)
-├── Cinemachine_ex.jpg     # Project reference image
-└── README.md
+| Folder/File | Purpose |
+| :--- | :--- |
+| `📂 UnityProject` | **Source Code.** Contains all Scenes, Prefabs, and Scripts. |
+| `📂 assets` | Static assets and CSS for the GitHub Pages portfolio. |
+| `📄 index.html` | The landing page for the web showcase. |
+| `📄 Cinemachine_ex.jpg` | Technical reference image for documentation. |
+
+---
+
+## 🛠 Tech Stack
+* **Engine:** Unity (Universal Render Pipeline)
+* **Package:** Cinemachine 2.9.x / 3.0
+* **Deployment:** WebGL via GitHub Pages & Itch.io
